@@ -46,38 +46,43 @@ nav ul li a {
 .portfolio-section {
     padding: 60px 20px;
     background-color: #fff;
-    opacity: 0;
-    transform: translateY(100px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.portfolio-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.portfolio-section:nth-child(even) {
-    background-color: #f8f8f8;
-}
-
-h2 {
+.portfolio-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-p {
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 30px;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.btn {
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-    padding: 10px;
+.project-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 15px;
     background-color: #333;
     color: white;
     text-decoration: none;
@@ -85,8 +90,13 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.project-card .btn:hover {
     background-color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 footer {
