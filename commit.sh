@@ -1,3 +1,3 @@
 git add --all
-git commit -m "css"
+git commit -m "."
 git push -u origin main
