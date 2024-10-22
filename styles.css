@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ body {
     padding: 0 20px;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -43,6 +45,7 @@ nav ul li a {
     font-weight: 600;
 }
 
+/* Portfolio Section Styles */
 .portfolio-section {
     padding: 60px 20px;
     background-color: #fff;
@@ -55,6 +58,7 @@ nav ul li a {
     text-align: center;
 }
 
+/* Gallery Styles (used for both modeling and photoshoot pages) */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -74,6 +78,8 @@ nav ul li a {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item p {
@@ -87,6 +93,57 @@ nav ul li a {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.gallery-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Card Styles (for CS Portfolio) */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px 0;
