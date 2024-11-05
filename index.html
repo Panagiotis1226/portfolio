@@ -16,8 +16,8 @@
             <h1 class="title">Welcome to Peter's Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="modeling">Modeling Portfolio</a></li>
-                    <li><a href="cs-portfolio">Computer Science Portfolio</a></li>
+                    <li><a href="modeling.html">Modeling Portfolio</a></li>
+                    <li><a href="cs-portfolio.html">Computer Science Portfolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,8 +42,8 @@
                     <h1 class="hero-title">Peter's Portfolio</h1>
                     <p class="hero-subtitle">Bridging the worlds of Technology and Fashion</p>
                     <div class="hero-cta">
-                        <a href="#modeling" class="btn btn-primary">Explore Modeling Work</a>
-                        <a href="#cs-portfolio" class="btn btn-secondary">View CS Projects</a>
+                        <a href="modeling.html" class="btn btn-primary">Explore Modeling Work</a>
+                        <a href="cs-portfolio.html" class="btn btn-secondary">View CS Projects</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <div class="section-grid">
                     <div class="section-content">
                         <h2>Modeling Portfolio</h2>
-                        <p>Bringing brands to life through professional modeling, runway shows, and editorial work.</p>
+                        <p>Professional model with experience in fashion, commercial, and editorial photography.</p>
                         <ul class="feature-list">
                             <li>Fashion Shows</li>
                             <li>Editorial Shoots</li>
@@ -96,52 +96,9 @@
             <p>&copy; 2024 Peter's Portfolio. All rights reserved.</p>
         </div>
     </footer>
-
-    <div class="loader">
-        <div class="loader-content"></div>
-    </div>
-
-    <div class="custom-cursor"></div>
-
+    
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
-    <script>
-        // Loader
-        window.addEventListener('load', () => {
-            document.querySelector('.loader').classList.add('fade-out');
-        });
-
-        // Scroll Reveal
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal').forEach(element => {
-            observer.observe(element);
-        });
-
-        // Custom Cursor
-        const cursor = document.querySelector('.custom-cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
-
-        document.querySelectorAll('a, button').forEach(element => {
-            element.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-            element.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
-    </script>
     <script src="js/theme.js"></script>
 </body>
 </html>
