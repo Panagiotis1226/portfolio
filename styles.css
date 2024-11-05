@@ -89,11 +89,10 @@ nav ul li a:hover::after {
 
 /* Portfolio Section Styles */
 .portfolio-section {
-    padding-top: 100px;
-    margin-top: -100px;
-    padding-bottom: 60px;
-    background-color: transparent;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    padding: 2rem 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .portfolio-section h2 {
@@ -466,7 +465,7 @@ footer {
 
 /* Add this after your header styles (around line 48) */
 main {
-    padding-top: 100px; /* Adjust this value based on your header height */
+    padding-top: 150px;
 }
 
 .projects-grid {
@@ -509,7 +508,7 @@ main {
 }
 
 .page-wrapper {
-    padding-top: 120px;
+    padding-top: 150px;
     min-height: 100vh;
     position: relative;
     z-index: 1;
