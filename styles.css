@@ -42,9 +42,11 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
     box-shadow: var(--card-shadow);
     padding: 1rem 0;
+    height: auto;
 }
 
 [data-theme="dark"] header {
@@ -90,9 +92,9 @@ nav ul li a:hover::after {
 /* Portfolio Section Styles */
 .portfolio-section {
     padding: 2rem 0;
-    margin-top: 0;
     position: relative;
     z-index: 2;
+    margin-top: 0;
 }
 
 .portfolio-section h2 {
@@ -204,6 +206,8 @@ footer {
     align-items: center;
     overflow: hidden;
     margin-bottom: 4rem;
+    padding-top: 180px;
+    margin-top: -180px;
 }
 
 .hero-background {
@@ -465,7 +469,7 @@ footer {
 
 /* Add this after your header styles (around line 48) */
 main {
-    padding-top: 150px;
+    padding-top: 180px;
 }
 
 .projects-grid {
@@ -508,7 +512,7 @@ main {
 }
 
 .page-wrapper {
-    padding-top: 150px;
+    padding-top: 180px;
     min-height: 100vh;
     position: relative;
     z-index: 1;
