@@ -5,15 +5,9 @@ function initThemeToggle() {
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-
-        if (window.pJSDom && window.pJSDom[0]) {
-            const particlesColor = theme === 'dark' ? '#ecf0f1' : '#2d3436';
-            window.pJSDom[0].pJS.particles.color.value = particlesColor;
-            window.pJSDom[0].pJS.particles.line_linked.color = particlesColor;
-            window.pJSDom[0].pJS.fn.particlesRefresh();
-        }
     }
 
+    // Check for saved theme preference or system preference
     const savedTheme = localStorage.getItem('theme') || 
                       (prefersDarkScheme.matches ? 'dark' : 'light');
     setTheme(savedTheme);
@@ -23,12 +17,7 @@ function initThemeToggle() {
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
     });
-
-    prefersDarkScheme.addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
 }
 
+// Initialize theme toggle when DOM is loaded
 document.addEventListener('DOMContentLoaded', initThemeToggle);

@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+<div class="theme-toggle"></div>
+    <button id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
+            <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+        </svg>
+    </button>
+</div>
 <body>
-    <div id="particles-js"></div>
     <header>
         <div class="container">
             <h1 class="title">Computer Science Portfolio</h1>
@@ -22,23 +32,25 @@
         </div>
     </header>
 
-    <div class="theme-toggle">
-        <button id="themeToggle" aria-label="Toggle theme">
-            <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
-                <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-            </svg>
-            <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
-            </svg>
-        </button>
-    </div>
-
     <section class="portfolio-section">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects">
-                <!-- Project cards will go here -->
+                <div class="project-card">
+                    <h3>Cybersecurity Tool</h3>
+                    <p>A custom-built tool that scans networks and identifies vulnerabilities using exploit simulations.</p>
+                    <a href="https://github.com/yourusername/cybersecurity-tool" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Web Scraper</h3>
+                    <p>A Python-based web scraper for gathering data from websites, used to analyze trends and patterns.</p>
+                    <a href="https://github.com/yourusername/web-scraper" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website showcasing both my modeling and computer science work.</p>
+                    <a href="https://github.com/yourusername/portfolio-website" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
@@ -48,9 +60,6 @@
             <p>&copy; 2024 Peter's Portfolio. All rights reserved.</p>
         </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/particles.js"></script>
     <script src="js/theme.js"></script>
 </body>
 </html>
