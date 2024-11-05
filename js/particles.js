@@ -8,7 +8,7 @@ const particlesConfig = {
       }
     },
     color: {
-      value: var(--secondary-color)
+      value: "#0984e3"
     },
     size: {
       value: 2,
@@ -21,7 +21,7 @@ const particlesConfig = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: var(--secondary-color),
+      color: "#0984e3",
       opacity: 0.1,
       width: 1
     },
