@@ -507,3 +507,15 @@ main {
     border-radius: 15px;
     font-size: 0.875rem;
 }
+
+.page-wrapper {
+    padding-top: 120px;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-section {
+    padding: 2rem 0;
+    background-color: transparent;
+}
