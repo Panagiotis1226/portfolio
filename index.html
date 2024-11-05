@@ -7,6 +7,7 @@
     <title>Peter's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,21 +22,61 @@
         </div>
     </header>
 
-    <section id="modeling" class="portfolio-section">
-        <div class="container">
-            <h2>Modeling Portfolio</h2>
-            <p>Welcome to the section showcasing my modeling work, featuring a collection of photos, runway work, and more.</p>
-            <a href="modeling.html" class="btn">View Modeling Portfolio</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Peter's Portfolio</h1>
+                    <p class="hero-subtitle">Bridging the worlds of Technology and Fashion</p>
+                    <div class="hero-cta">
+                        <a href="#modeling" class="btn btn-primary">Explore Modeling Work</a>
+                        <a href="#cs-portfolio" class="btn btn-secondary">View CS Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
 
-    <section id="cs-portfolio" class="portfolio-section">
-        <div class="container">
-            <h2>Computer Science Portfolio</h2>
-            <p>Explore my computer science projects, ranging from cybersecurity tools to web development projects.</p>
-            <a href="cs-portfolio.html" class="btn">View CS Portfolio</a>
-        </div>
-    </section>
+        <section id="modeling" class="portfolio-section">
+            <div class="container">
+                <div class="section-grid">
+                    <div class="section-content">
+                        <h2>Modeling Portfolio</h2>
+                        <p>Bringing brands to life through professional modeling, runway shows, and editorial work.</p>
+                        <ul class="feature-list">
+                            <li>Fashion Shows</li>
+                            <li>Editorial Shoots</li>
+                            <li>Brand Campaigns</li>
+                        </ul>
+                        <a href="modeling.html" class="btn btn-outline">View Modeling Portfolio</a>
+                    </div>
+                    <div class="section-image">
+                        <img src="images/modeling-preview.jpg" alt="Modeling Preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cs-portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-grid reverse">
+                    <div class="section-content">
+                        <h2>Computer Science Portfolio</h2>
+                        <p>Creating innovative solutions through code, from cybersecurity to web development.</p>
+                        <ul class="feature-list">
+                            <li>Full-Stack Development</li>
+                            <li>Cybersecurity Tools</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                        <a href="cs-portfolio.html" class="btn btn-outline">View CS Portfolio</a>
+                    </div>
+                    <div class="section-image">
+                        <img src="images/coding-preview.jpg" alt="Coding Preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
