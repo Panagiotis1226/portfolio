@@ -442,11 +442,21 @@ footer {
 .theme-toggle svg {
     width: 24px;
     height: 24px;
+    stroke: var(--text-color);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.theme-toggle .sun-icon circle {
     fill: var(--text-color);
 }
 
 .theme-toggle .moon-icon {
     display: none;
+    fill: var(--text-color);
+    stroke: none;
 }
 
 [data-theme="dark"] .sun-icon {
