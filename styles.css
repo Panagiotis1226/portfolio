@@ -752,8 +752,8 @@ main {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, var(--secondary-color), rgba(var(--secondary-color), 0.8));
-    color: #ffffff !important;
+    background: var(--secondary-color);
+    color: var(--background-color) !important;
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -764,7 +764,7 @@ main {
 .skill-tag:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-color));
+    opacity: 0.9;
 }
 
 /* Responsive adjustments */
