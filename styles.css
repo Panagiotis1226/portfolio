@@ -726,7 +726,7 @@ main {
 .skill-group {
     margin-bottom: 2rem;
     padding: 1rem;
-    background: rgba(var(--secondary-color), 0.05);
+    background: rgba(var(--text-color), 0.05);
     border-radius: 10px;
 }
 
@@ -796,7 +796,7 @@ main {
 .skills-category h3,
 .skills-category h4,
 .skill-group h4 {
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
 /* Ensure theme toggle is visible */
