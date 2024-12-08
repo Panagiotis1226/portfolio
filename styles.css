@@ -753,7 +753,7 @@ main {
 
 .skill-tag {
     background: linear-gradient(135deg, var(--secondary-color), rgba(var(--secondary-color), 0.8));
-    color: white;
+    color: #ffffff !important;
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -791,4 +791,21 @@ main {
         font-size: 0.85rem;
         padding: 0.5rem 1rem;
     }
+}
+
+.skills-category h3,
+.skills-category h4,
+.skill-group h4 {
+    color: var(--text-color);
+}
+
+/* Ensure theme toggle is visible */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--card-shadow);
 }
