@@ -5,7 +5,7 @@ This repository is solely for the website code. To view the full online portfoli
 
 Website: <br>
 Visit my GitHub Pages site to view the live portfolio:
-https://therichdiamond.github.io/portfolio
+https://Panagiotis1226.github.io/portfolio
 
 Features: <br>
 Responsive Design: Optimized for all devices to ensure a seamless user experience.
